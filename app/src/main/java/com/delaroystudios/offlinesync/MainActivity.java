@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
 			if(controller.dbSyncCount() != 0){
 				prgDialog.show();
 				params.put("usersJSON", controller.composeJSONfromSQLite());
-				client.post("http://idsp.ak.gov.ng/offlinesync/insertuser.php",params ,new AsyncHttpResponseHandler() {
+				client.post("http://jakeleanedu.ipdisk.co.kr:8000/apps/g5/api/sqlitemysqlsync/insertuser.php",params ,new AsyncHttpResponseHandler() {
 					@Override
 					public void onSuccess(String response) {
 						System.out.println(response);

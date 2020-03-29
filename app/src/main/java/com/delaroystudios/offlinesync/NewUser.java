@@ -9,8 +9,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.delaroystudios.offlinesync.R;
-
 public class NewUser extends Activity {
 	EditText userName;
 	DBController controller = new DBController(this);
